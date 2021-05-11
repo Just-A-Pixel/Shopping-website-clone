@@ -4,7 +4,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
-import {AnimatePresence, motion} from 'framer-motion';
+import {AnimatePresence} from 'framer-motion';
 
 
 function App() {

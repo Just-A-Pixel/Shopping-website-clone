@@ -6,10 +6,10 @@ import { AnimatePresence, motion } from "framer-motion";
 
 
 function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
-  const [{ basket }, dispatch] = useStateValue();
+  // eslint-disable-next-line
+  const [{basket}, dispatch] = useStateValue();
 
   const removeFromBasket = () => {
-    // remove the item from the basket
     dispatch({
       type: "REMOVE_FROM_BASKET",
       id: id,
@@ -25,7 +25,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
         exit={{ opacity: 0 }}
         
       >
-        <img className="checkoutProduct__image" src={image} />
+        <img className="checkoutProduct__image" src={image} alt=''/>
 
         <div className="checkoutProduct__info">
           <p className="checkoutProduct__title">{title}</p>

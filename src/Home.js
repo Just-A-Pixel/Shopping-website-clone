@@ -4,27 +4,13 @@ import Product from "./Product";
 import {motion} from 'framer-motion';
 import { useStateValue } from "./StateProvider";
 import {home} from "./pagevariants"
-
-
-// const pageVariants = {
-//   initial: {
-//     opacity: 0,
-//   },
-//   in: {
-    
-//     opacity: 1,
-//     transition: {delay: 0.5}
-//   },
-//   out: {
-   
-//   },
-// }
-
+// import Threed from "./Threed";
 
 
 function Home() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
 
+  
   return (
     <motion.div
     initial="initial"
@@ -37,6 +23,7 @@ function Home() {
           alt=""
           src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
         /> */}
+        {/* <Threed/> */}
 
         <div className="home__row">
           <Product id={`1${basket.length}`} price={100} title="Green Shoes" image='https://pngimg.com/uploads/running_shoes/running_shoes_PNG5816.png' rating={3}/>

@@ -9,18 +9,17 @@ const home = {
   out: {},
 };
 
-
 const checkout = {
-    initial: {
-      x: '100vw',
-    },
-    in: {
-      x: 0,
-    },
-    out: {
-      x: '100vw',
-      transition: {ease: 'easeInOut'}
-    },
-  }
+  initial: {
+    x: "100vw",
+  },
+  in: {
+    x: 0,
+  },
+  out: {
+    x: "100vw",
+    transition: { ease: "easeInOut" },
+  },
+};
 
 export { home, checkout };
