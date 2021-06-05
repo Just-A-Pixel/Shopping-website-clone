@@ -2,7 +2,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: #131921;
+    background-color: #fafafa;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -37,17 +37,19 @@
 
 .header__optionLineOne{
     font-size: 10px;
+    color: black;
 }
 
 .header__optionLineTwo {
     font-size: 13px;
     font-weight: 800;
+    color: black;
 }
 
 .header__optionBasket {
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(27, 27, 27);
 }
 
 .header__basketCount {

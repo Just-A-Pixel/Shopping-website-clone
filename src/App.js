@@ -5,6 +5,8 @@ import Home from "./Home";
 import Checkout from "./Checkout";
 import { BrowserRouter as Router, Switch, Route, useLocation } from "react-router-dom";
 import {AnimatePresence} from 'framer-motion';
+import Admin from "./Admin";
+// import Payment from "./Payment";
 
 
 function App() {
@@ -18,6 +20,10 @@ function App() {
         <Header />
     <AnimatePresence>
         <Switch location={location} key={location.key}>
+        
+        <Router path="/admin">
+            <Admin />
+          </Router>
           <Router path="/checkout">
             <Checkout />
           </Router>
